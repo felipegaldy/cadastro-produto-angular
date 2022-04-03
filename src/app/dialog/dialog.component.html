@@ -1,0 +1,56 @@
+<h1 mat-dialog-title>Adicionar Produto</h1> 
+
+<div mat-dialog-content>
+
+<form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Nome do Produto</mat-label>
+        <input formControlName="productName" matInput placeholder="Digite o nome do produto">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Marca</mat-label>
+       <mat-select formControlName="category" placeholder="Marca">
+           <mat-option value='Iphone'>Iphone</mat-option>
+           <mat-option value='Samsung'>Samsung</mat-option>
+           <mat-option value='Motorola'>Motorola</mat-option>
+           <mat-option value='Xiaomi'>Xiaomi</mat-option>
+           <mat-option value='Outras'>Outras</mat-option>
+       </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Data</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      <label for=""><h1>Tipo de produto</h1></label>
+      <mat-radio-group formControlName="type" class="example-radio-group">
+          <mat-radio-button class="example-radio-button" *ngFor="let tipo of tipoProduto" [value]="tipo">
+
+            {{tipo}}
+
+          </mat-radio-button>
+      </mat-radio-group>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Preço </mat-label>
+        <input formControlName="price" matInput type="number" placeholder="Digite o nome do produto">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Descrição</mat-label>
+        <textarea formControlName="comment" matInput></textarea>   
+    </mat-form-field>
+</form>
+
+</div>
+
+<div mat-dialog-action [align]="'end'">
+
+    <button mat-raised-button color="primary" (click)="addProduct()" >{{actionBtn}}</button>
+    <button style="margin-left: 5px;" mat-raised-button color="warn" mat-dialog-close >Fechar</button>
+
+</div>

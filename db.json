@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "productName": "Iphone X12",
+      "category": "Iphone",
+      "type": "Smartphone",
+      "price": 5500,
+      "comment": "Celular semi novo",
+      "date": "2022-04-01T03:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Mi A2",
+      "category": "Xiaomi",
+      "type": "Smartphone",
+      "price": 2200,
+      "comment": "celular novo importado",
+      "date": "2022-04-02T03:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Cabo USB",
+      "category": "Outras",
+      "type": "Acessório",
+      "price": 20,
+      "comment": "cabo tipo c",
+      "date": "2022-04-04T03:00:00.000Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
