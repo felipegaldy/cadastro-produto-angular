@@ -26,6 +26,15 @@
       "comment": "cabo tipo c",
       "date": "2022-04-04T03:00:00.000Z",
       "id": 3
+    },
+    {
+      "productName": "teste",
+      "category": "Motorola",
+      "type": "Smartphone",
+      "price": 555,
+      "comment": "dsadas",
+      "date": "2022-04-02T03:00:00.000Z",
+      "id": 4
     }
   ],
   "comments": [
