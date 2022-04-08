@@ -28,13 +28,13 @@
       "id": 3
     },
     {
-      "productName": "teste",
-      "category": "Motorola",
+      "productName": "Capa de silicone",
+      "category": "Iphone",
       "type": "Smartphone",
-      "price": 555,
-      "comment": "dsadas",
-      "date": "2022-04-02T03:00:00.000Z",
-      "id": 4
+      "price": 25,
+      "comment": "Capa de silicone para Iphone 8",
+      "date": "2022-04-08T03:00:00.000Z",
+      "id": 5
     }
   ],
   "comments": [
